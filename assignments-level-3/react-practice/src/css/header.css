@@ -1,0 +1,45 @@
+.header {
+    position: absolute;
+    width: 550px;
+    height: 65px;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+}
+
+.troll--face {
+    position: absolute;
+    width: 31.31px;
+    height: 26.22px;
+    left: 20px;
+    top: 19px;
+}
+
+.header--title {    
+    position: absolute;
+    width: 140.79px;
+    height: 24px;
+    left: 58px;
+    top: 5px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20.7482px;
+    line-height: 24px;
+    letter-spacing: -0.1em;
+    color: #FFFFFF;
+    margin-right: auto;
+}
+
+.header--title2 {
+    position: absolute;
+    width: 189px;
+    height: 14px;
+    left: 324px;
+    top: 15px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    color: #FFFFFF;
+}

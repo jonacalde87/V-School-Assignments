@@ -1,0 +1,8 @@
+@import 'data-entry.css';
+@import 'badge.css';
+
+/* (* = select everything), (*::before = select all the before elements), (*::after = select all after elements) */
+*, *::before, *::after {
+    font-family: Gotham Rounded, sans-serif;
+    box-sizing: border-box;
+}

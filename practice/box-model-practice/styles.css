@@ -1,0 +1,26 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+#box1 {
+    border: 5px solid rgb(121, 29, 212);
+    padding: 10px 5px 10px 5px;
+    margin: 10px;
+    background-color: aqua;
+}
+
+/* # is an id selector */
+#box2 {
+    border: 2px dashed blue;
+    padding: 10px 5px 10px 5px;
+    margin: 10px;
+}
+
+/* . is a class selector */
+.box3 {
+    border: 2px dotted red;
+    padding: 10px 5px 10px 5px;
+    margin: 10px;
+}
+

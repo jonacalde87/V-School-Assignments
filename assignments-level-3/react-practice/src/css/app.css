@@ -1,0 +1,12 @@
+@import 'header.css';
+@import 'meme.css';
+
+/* (* = select everything), (*::before = select all the before elements), (*::after = select all after elements) */
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: sans-serif
+}
+
+body {
+    margin: 0;
+}

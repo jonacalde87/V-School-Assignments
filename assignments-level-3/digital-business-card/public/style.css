@@ -1,0 +1,145 @@
+.container {
+    position: absolute;
+    width: 550px;
+    height: 868px;
+    left: 65px;
+    top: 53px;
+    background: #23252C;
+}
+
+.profilePicture {
+    position: absolute;
+    width: 317px;
+    height: 317px;
+    left: 116px;
+    top: 44px;    
+    border-radius: 10px 10px 0px 0px;
+}
+
+.btn1 {
+    display: inline-block;    
+    align-items: center;
+    padding: 9px 13px 9px 11px;
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    width: 115px;
+    height: 34px;
+    left: 151px;
+    top: 468px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.btn2 {
+    display: inline-block;    
+    align-items: center;
+    padding: 9px 13px 9px 11px;
+    background: #5093E2;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px; 
+    width: 115px;
+    height: 34px;
+    left: 283px;
+    top: 468px;
+}
+
+.emailLink {    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+
+.info {
+    position: absolute;
+    width: 317px;
+    height: 399px;
+    left: 116px;
+    top: 361px;
+    background: #1A1B21;
+    text-align: center;
+}
+
+h1 {   
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.description {
+    width: 178.06px;
+    height: 14.19px;
+    top: 414px;    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 15px;     
+    color: #F3BF99;
+    text-align: right;
+    
+}
+
+.about {
+    position: absolute;
+    width: 247px;
+    height: 201px;
+    left: 152px;
+    top: 535px;
+}
+
+.about > h2 { 
+    margin-top: inherit;
+    width: 242.71px;
+    height: 21px;
+    left: 152px;
+    top: 535px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #F5F5F5;
+}
+
+.about > p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 150%;
+    color: #DCDCDC;
+}
+
+.footer {
+    position: absolute;
+    width: 317px;
+    height: 64px;
+    left: 116px;
+    top: 760px;
+    background: #161619;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.twitterLogo, .facebookLogo, .instagramLogo, .githubLogo {
+    /* cant make the logos center */
+    display: inline-block;
+    width: 10%;
+    align-items: center;
+    margin: 20px;
+}
+
+
+

@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    margin: 0px;
+    font-family: Inter, sans-serif;  
+    background: #282D35;  
+
+    
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #21222A;
+    /* 30px is for top and bottom, 25px is for left and right */
+    padding: 30px 25px; 
+    height: 90px;   
+}
+
+.logo {
+    position: absolute;
+    width: 28.93px;
+    height: 28.93px;
+    left: 26px;
+    top: 31px;
+}
+
+.logo-text {
+    margin-right: auto;
+    position: absolute;
+    width: 122.39px;
+    height: 22.25px;
+    left: 61.61px;
+    top: 31px;
+    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22.2535px;
+    line-height: 27px;
+    letter-spacing: -0.05em;
+    color: #61DAFB;
+}
+
+.extra-title {
+    position: absolute;
+    width: 259px;
+    height: 21px;
+    left: 264px;
+    top: 38px;
+    margin: 0;    
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: right;
+    color: #DEEBF8;
+}
+
+.main-title {
+    margin: 0;
+    color: white;
+    font-size: 39px;   
+    letter-spacing: -0.05em; 
+    
+    
+}
+
+.main-body {
+    position: absolute;
+    width: 550px;
+    height: 459px;
+    left: 0px;
+    top: 91px;
+    
+    /* 57px top and botton; 27px left and right */
+    padding: 57px 27px;
+
+    /* had to move the large logo into public  */
+    background-image: url(./react-icon-large.png);
+    background-repeat: no-repeat;
+    background-position-x: right;  
+    background-position-y: 50%;  
+}
+
+.list > li {
+    color: white;    
+    width: 390px;
+    line-height: 19px;
+    padding-block: 10px;   
+}
+
+.list > li::marker {
+    font-size: 1.4rem;
+    color: #61DAFB;
+
+}

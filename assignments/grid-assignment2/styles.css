@@ -1,0 +1,43 @@
+/* Styling for the 5 divs */
+#grid-container > div {
+    border: 2px solid black;
+    border-radius: 10px;    
+}
+
+#grid-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, 1fr);
+    grid-template-rows: repeat(5, 100px);
+  
+}
+
+#red {
+    background-color: red;
+    grid-column: 1 / 4;
+}
+
+#blue {
+    background-color: blue;
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+}
+
+#green {
+    background-color: green;
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;   
+}
+
+#purple {
+    background-color:  purple;
+    grid-column: 2 / 3;
+}
+
+#purple2 {
+    background-color: purple;
+    grid-column: 3 / 4;
+}
+
+
+

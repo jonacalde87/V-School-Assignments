@@ -1,0 +1,129 @@
+html, body {
+    margin: 0;
+    padding: 5px;
+    font-family: sans-serif;
+}
+
+#grid-container {
+    font-size: 22px;    
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* to repeat 1fr 12 times*/
+    grid-gap: 10px; /* to have a space between containers*/    
+}
+
+/* Phone media query*/
+@media only screen and (min-width: 400px) {
+header {    
+    background-color: dodgerblue;   
+    grid-column: 1 / 13; /* for header top of whole page*/
+    border-radius: 5px;  
+    border: 1px solid black;     
+}
+
+nav {
+    background-color: darkorchid;
+    border: 1px solid black;
+    border-radius: 5px;
+    grid-column: 1 / 13;
+}
+
+main {
+    background-color: darkgreen;
+    grid-column: 1 / 13;
+    border: 1px solid black;
+    border-radius: 5px;   
+}
+
+#sidebar2 {
+    background-color: aqua;
+    border: 1px solid black;
+    border-radius: 5px;
+    grid-column: 1 / 13;
+}
+
+footer {   
+    background-color: darkslateblue;
+    grid-column: 1 / 13;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+}
+}
+
+/* Tablet media query*/
+@media only screen and (min-width: 650px) {
+    header {    
+        background-color: dodgerblue;   
+        grid-column: 1 / 13; /* for header top of whole page*/
+        border-radius: 5px;  
+        border: 1px solid black;     
+    }
+    
+    nav {
+        background-color: darkorchid;
+        border: 1px solid black;
+        border-radius: 5px;
+        grid-column: 1 / 3;        
+    }
+    
+    main {
+        background-color: darkgreen;
+        grid-column: 3 / 13;
+        border: 1px solid black;
+        border-radius: 5px;       
+    }
+
+    #sidebar2 {
+        background-color: aqua;
+        border: 1px solid black;
+        border-radius: 5px;
+        grid-column: 1 / 13;
+    }
+    
+    footer {   
+        background-color: darkslateblue;
+        grid-column: 1 / 13;
+        border: 1px solid black;
+        border-radius: 5px;
+        
+    }
+    }
+
+/* Laptop*/
+    @media only screen and (min-width: 1200px) { 
+    header {    
+        background-color: dodgerblue;   
+        grid-column: 1 / 13; /* for header top of whole page*/
+        border-radius: 5px;  
+        border: 1px solid black;     
+    }
+    
+    nav {
+        background-color: darkorchid;
+        border: 1px solid black;
+        border-radius: 5px;
+        grid-column: 1 / 3;        
+    }
+    
+    main {
+        background-color: darkgreen;
+        grid-column: 3 / 10;
+        border: 1px solid black;
+        border-radius: 5px;       
+    }
+
+    #sidebar2 {
+        background-color: aqua;
+        border: 1px solid black;
+        border-radius: 5px;
+        grid-column: 10 / 13;
+    }
+    
+    footer {   
+        background-color: darkslateblue;
+        grid-column: 1 / 13;
+        border: 1px solid black;
+        border-radius: 5px;
+        
+    }
+}

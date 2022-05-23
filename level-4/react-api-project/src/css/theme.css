@@ -1,0 +1,18 @@
+.light-theme {
+    background-color: white;
+    color: #000;
+}
+
+.dark-theme {
+    background-color: darkslategrey;
+    color: #fff; 
+}
+
+button:hover { 
+    border: 2px solid white; 
+    box-shadow: 0 12px 16px 0 grey, 0 17px 50px 0 rgba(0,0,0,0.19);
+ }
+
+button { 
+    padding: 5px 10px; 
+}

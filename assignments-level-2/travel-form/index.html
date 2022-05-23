@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="header">
+    <h1>Welcome to Masucamba Airlines</h1>
+    <h2>Please fill out the following information prior departing:</h2>
+</div>
+
+    <div id="container">
+
+    <form name="passenger">
+        <input type="text" name="firstName" placeholder="First Name" required> <br><br>
+        <input type="text" name="lastName" placeholder="Last Name" required> <br><br>
+        <input type="number" name="age" placeholder="Age" required> <br><br>
+
+        Male:<input type="radio" name="gender" value="Male">
+        Female:<input type="radio" name="gender" value="Female"> <br><br>
+
+        Destination:
+        <select name="city">
+            <option value="Puerto Rico">Puerto Rico</option>
+            <option value="Canada">Canada</option>
+            <option value="Jamaica">Jamaica</option>
+        </select> <br><br>
+
+        Dietary restictions: <br>
+        Vegetarian:<input type="checkbox" name="diet" value="Vegetarian">
+        Kosher:<input type="checkbox" name="diet" value="Kosher">
+        Lactose Free:<input type="checkbox" name="diet" value="Lactose Free"><br><br>
+
+        <button>Submit</button>
+
+    </form>
+</div>
+    <script src="app.js"></script>
+</body>
+
+</html>

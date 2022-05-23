@@ -1,0 +1,1 @@
+console.log(axios) // to check if it works on the DOM console

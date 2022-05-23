@@ -1,0 +1,46 @@
+* { /* Resets and Default styling */
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+/* Mobile Design*/
+#box {
+    border: 2px solid black;
+}
+
+#box > h1 {
+    background-color: dodgerblue;
+}
+
+/* larger Phones */
+@media only screen and (min-width: 400px) {
+    #box {
+        border: 2px dashed green;
+    }
+    
+    #box > h1 {
+        background-color: firebrick;
+    }
+
+}
+/* Tablet */
+@media only screen and (min-width: 650px) {
+    #box {
+        border: 5px dashed purple;
+    }
+    
+    #box > h1 {
+        background-color: cornflowerblue;
+    }
+}
+
+/* Laptop*/
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+    
+}

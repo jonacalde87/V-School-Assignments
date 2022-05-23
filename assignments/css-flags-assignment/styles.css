@@ -1,0 +1,136 @@
+/* France Flag*/ 
+ #container {
+    display: grid; 
+    grid-template-rows: repeat(2, 200px); 
+    grid-template-columns: repeat (3, 300px); 
+    border: 2px solid black;
+}
+ #blue {
+    background-color: #002495;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    border: 2px solid black;
+}
+#white {
+    background-color: #FFFFFF;
+    grid-column: 2 / 3;   
+    grid-row: 1 / 3;
+    border: 2px solid black;
+}
+#red {
+    background-color: #ED2938;
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+    border: 2px dotted black;
+}
+
+/* Germany Flag*/ 
+/* #container {
+    display: grid; 
+    grid-template-columns: 333px;
+    grid-template-rows: repeat(3, 200px);   
+}
+#black {
+    background-color: #000000;        
+}
+#red2 {
+    background-color: #DE0002;   
+}
+#yellow {
+    background-color: #FFCE00;  
+} */
+
+/* Madagascar Flag*/ 
+/* #container {
+    display: grid; 
+    grid-template-rows: repeat(4, 200px);    
+    border: 2px solid black;
+}
+#white2 {
+    background-color: #FFFFFF;   
+}
+#red3 {
+    background-color: #FC3E32;
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;     
+}
+#green {
+    background-color: #007E39;
+    grid-column: 2 / 4;
+    grid-row: 3 / 5;
+} */
+
+/* Switzerland Flag */ 
+  /* #switzerland {
+    height: 200px;
+    width: 300px;
+    padding: 50px;
+    background-color: #FF0002;
+  }
+  #switzerland > .cross {
+    position: relative;
+    height: inherit;
+    width: inherit;
+  }
+  #switzerland > .cross > .vertical-stripe {
+    position: absolute;
+    height: inherit;
+    width: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFFFFF;
+  }
+  #switzerland > .cross > .horizontal-stripe {
+    position: absolute;
+    height: 100px;
+    width: inherit;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #FFFFFF;
+  } */
+
+  /* Sweden */
+  /* .flagContainer {
+    height: 400px;
+    width: 800px;
+  }
+#sweden {
+    position: relative;
+    background-color: #0269A6;
+  }
+  #sweden > .vertical-stripe {
+    position: absolute;
+    height: inherit;
+    width: 50px;
+    left: 30%;
+    background-color: #FECC00;
+  }
+  #sweden > .horizontal-stripe {
+    position: absolute;
+    height: 50px;
+    width: inherit;
+    top: 40%;
+    background-color: #FECC00;
+  } */
+
+  /* Japan */
+  /* .flagContainer {
+    height: 400px;
+    width: 650px;
+    border: 2px solid black;
+  }
+#japan {
+    display: flex;
+    background-color: #FFFFFF;
+  }
+  #japan > .circle {
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #BC022C;
+  } */
+
+
+
+

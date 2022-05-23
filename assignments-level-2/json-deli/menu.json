@@ -1,0 +1,51 @@
+{
+    "appetizers": [
+        {
+            "name":"rolls-up",
+            "ingredients": ["roast beef", "bread", "cheese"],
+            "description":"if you are not too hungry"
+        },
+        {
+            "name": "ham & cheese spirals",
+            "ingredients": ["ham", "cheese", "bread"],
+            "description": "basic but tasty"
+        } 
+    ],
+    "cold sandwiches": [
+        {
+            "name": "deli sandwich",
+            "ingredients": ["onion", "sourdough bread", "pastrami", "turkey"],
+            "description": "quicky bite"
+        },
+        {
+            "name": "deli style corned beef sandwich",
+            "ingredients": ["bun", "swiss cheese", "mayo", "corned beefy"],
+            "description": "healthy bite"
+        }
+    ],
+    "hot sandwiches": [
+        {
+            "name": "meatball sandwich",
+            "ingredients": ["bun", "motzarella cheese", "marinara sauce", "italian seasoning"],
+            "description": "for big boys"
+
+        },
+        {
+            "name": "hot ham and cheese",
+            "ingredients": ["bun", "american cheese"],
+            "description": "kids bite"
+        }
+    ],
+    "desserts": [
+        {
+            "name": "doughnouts",
+            "ingredients": ["eggs", "sugar", "flour"],
+            "description": "mostly for cops"
+        },
+        {
+            "name": "chocolate chip cookies",
+            "ingredients": ["eggs", "cookie dough", "sugar"],
+            "description": "small but powerful"
+        }
+    ]
+}

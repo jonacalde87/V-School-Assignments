@@ -1,0 +1,23 @@
+#header {
+    text-align: center;
+}
+
+#form {
+   text-align: center;  
+    margin: auto;
+    display: block;
+    width: 50%;  
+    margin-top: 5px;
+    margin-bottom: 5px
+}
+
+#todo-list {
+    background-color: aqua;    
+    text-align: center;
+    border: solid 5px black;
+    margin: auto;
+    display: block;
+    width: 50%;  
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

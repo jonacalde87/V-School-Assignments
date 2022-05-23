@@ -1,0 +1,15 @@
+body {
+    background-color: grey;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px;
+    grid-gap: 10px;
+    text-align: center;
+    justify-content: center;
+    border: 5px solid black;
+    color: grey;
+    padding: 5px;
+}

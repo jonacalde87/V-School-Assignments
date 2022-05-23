@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Pest Control</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div id="header">
+        <h1>Mario Pest Control Services</h1>
+        <h2>We exterminate and you pay!</h2>
+        <img id="marioPic"
+            src="https://static.wikia.nocookie.net/marioandsonic/images/5/5e/Mario_bros.jpg/revision/latest?cb=20130119214906"
+            style="width:130px;height:130px;">
+    </div>
+    <div id="container">
+        <form name="billing">
+            <ul id="pestList">
+                <li id="goomba">
+                    <img src="https://mario.wiki.gallery/images/3/3a/Goomba_vector_art.svg"
+                        style="width:130px;height:130px;"> <br>
+                    Goomba: 5 coins<br>
+                    <input type="number" name="goomba" id="goombaPest" placeholder="qty">
+                </li><br>
+
+                <li id="bombs">
+                    <img src="https://static.wikia.nocookie.net/mariokart/images/1/16/Bob-ombMK8.png/revision/latest?cb=20140520034125"
+                        style="width:130px;height:130px;"> <br>
+                    Bob-ombs: 7 coins<br>
+                    <input type="number" name="bombomb" id="bombPest" placeholder="qty">
+                </li><br>
+                <li id="cheep">
+                    <img src="https://mario.wiki.gallery/images/e/e8/Legendary_Cheep_Cheep_PMTOK_sprite.png"
+                        style="width:130px;height:130px;"><br>
+                    Cheep-cheep: 11 coins<br>
+                    <input type="number" name="cheepcheep" id="cheepPest" placeholder="qty">
+                </li>
+            </ul>
+            <button type="submit" id="button">Calculate Total</button>
+            <h1 style="font-size: 30px" id="total"></h1>
+
+        </form>
+    </div>
+
+    <footer id="footer">mariopestcontrol@gmail.com&emsp;&emsp;
+        www.mariopestcontrol.com&emsp;&emsp;
+        123 Super Mario World
+        Enterpise, Alabama 36330
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

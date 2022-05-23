@@ -1,0 +1,99 @@
+
+
+img {
+    border: 3px solid rgb(15, 12, 12);
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px; 
+    display: block;   
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* QUESTION: how to make them same size*/
+.home, .care {
+  background-color: #4CAF50;
+  border: 3px solid black;
+  margin-bottom: 5px;
+  color: white;
+  width: 60px;
+  padding: 15px;
+  text-align: center;  
+  display: inline-block; 
+  font-size: 20px;  
+  
+  
+}
+
+#careHeader {
+  color: #0d9c14;
+}
+
+header {
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+    background: #0d9c14;
+    color: black;
+    font-size: 30px; 
+    border: 3px solid black;
+    border-radius: 20px; 
+}
+
+.freeShipping {
+    color: rgb(241, 33, 137);
+    font-size: 15px;
+    padding: 15px;
+    width: 300px;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-style: double; 
+}
+
+/* QUESTION: media query for small windows and how to center them and same size?*/
+@media only screen 
+  and (min-device-width: 375px) 
+   { 
+.container {   
+  background-color: #49ce0b;
+  border-radius: 20px; 
+  display: inline-block;  
+  text-align: center;  
+  font-size: 20px; 
+  border: 5px solid black;
+}
+}
+
+.button {
+  border: none;
+  color: black;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;  
+  border-style: solid;
+}
+
+footer {
+    color: blue;
+    padding: 15px;
+    margin: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;  
+}
+
+/* QUESTION: how to remove black bars on left of screen?*/
+#plantCare {
+  background-color: #49ce0b;
+  border-radius: 20px; 
+  
+  text-align: center;  
+  font-size: 20px; 
+  border: 5px solid black;
+
+
+}

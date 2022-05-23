@@ -1,0 +1,33 @@
+.badge--container {
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 400px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.badge--header { 
+    margin: 0;
+    padding: 10px; 
+    overflow: hidden;
+    background-color: grey;   
+    color: white;    
+}
+
+.label--container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    row-gap: 20px;
+    column-gap: 300px;
+    padding: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.textArea--output {    
+    border: 2px solid black;
+    border-radius: 2px;    
+    height: 175px;
+    margin: 0 80px 30px 80px;   
+}

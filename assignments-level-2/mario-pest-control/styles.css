@@ -1,0 +1,74 @@
+#header {
+    text-align: center;
+    background-color: white;
+    border: solid black ;
+     
+}
+
+#marioPic {      
+    display: inline;  
+}
+
+#luigiPic {  
+    display: inline;  
+  }
+
+body {
+    background-color: red;
+}
+
+#goomba {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+#bombs {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+#cheep {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+#footer{
+    margin: auto;
+    display: block;
+  width: 50%;
+  border: 3px solid blue; 
+  background-color: whitesmoke;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+#button {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+#container {
+    margin: auto;
+    display: block;
+  width: 50%;
+  border: 3px solid blue;  
+  background-color: white;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#total {
+    text-align: center;
+    color: red;   
+}

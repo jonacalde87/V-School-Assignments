@@ -1,0 +1,49 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+ /* Here */
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* to repeat 1fr 12 times*/
+    grid-gap: 5px; /* to have a space between containers*/
+}
+
+header {
+    font-size: 22px;
+    background-color: dodgerblue;
+    text-align: center;
+    grid-column: 1 / 13; /* for header top of whole page*/
+       
+}
+
+/* 1 - 4 */
+nav {
+    background-color: darkorchid;
+    grid-column: 1 / 5;
+    
+    
+}
+
+nav > div {
+    border: 1px solid black;
+    border-radius: 3px;
+    text-align: center;
+}
+
+/* 5 - 12*/
+main {
+    background-color: darkgreen;
+    grid-column: 5 / 13;
+    
+}
+
+/* 1 - 12 */
+footer {
+    font-size: 20px;
+    background-color: darkslateblue;
+    text-align: center;
+    grid-column: 1 / 13;
+    
+}

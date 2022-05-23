@@ -1,0 +1,22 @@
+input {
+    margin: 5px;
+    width: 30%;
+}
+
+button {       
+    border-radius: 5px;     
+    cursor: pointer;  
+}
+
+form {
+    margin: 0;    
+    top: 15%;
+    left: 50%;
+    text-align: center;
+    background-color: aqua;   
+}
+
+.form--container {
+    display: flex;
+    justify-content: center;    
+}

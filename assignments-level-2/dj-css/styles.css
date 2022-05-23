@@ -1,0 +1,111 @@
+h1 {
+    text-align: center;
+}
+
+#box1 {
+    display: inline-block;
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: cornflowerblue;
+    transition-duration: 800ms;
+    transition-timing-function: ease-in;
+}
+    #box1:hover {
+        background-color: aquamarine;
+        border-width: 10px;
+    }
+
+#box2 {
+    display: inline-block;
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: cornflowerblue;
+    transition-duration: 800ms;
+    transition-timing-function: ease-out;
+}
+    #box2:hover {
+        background-color: crimson;
+        border: double 10px blue;
+    }
+
+#box3 {
+    display: inline-block;
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: cornflowerblue;
+    transition-duration: 800ms;
+    transition-timing-function: ease;
+    
+}
+    #box3:hover {
+        background-color: chocolate;
+        border: dotted 10px brown;
+        border-top-left-radius: 10px;
+        box-shadow: 10px 10px black;   
+    }
+
+#box4 {
+    display: inline-block;
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: cornflowerblue;
+    transition-duration: 800ms;
+    transition-timing-function: ease;
+}
+    #box4:hover {
+        background-color: darkgreen;
+        border: 10px rebeccapurple;
+        border-bottom: 10px;
+        box-shadow: 10px 10px 10px blue;  
+        height: 150px; 
+        width: 250px;
+    }
+
+#box5 {
+    display: inline-block;
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: cornflowerblue;
+    transition-duration: 800ms;
+    transition-timing-function: ease;
+}
+    #box5:hover {
+        background-color: darkmagenta;
+        border-bottom: 10px;
+        box-shadow: 10px 10px black;  
+        height: 250px; 
+        margin: 20px ;
+    }
+
+#box6 {
+    display: inline-block;
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+    background-color: cornflowerblue;
+    transition-duration: 800ms;
+    transition-timing-function: ease;
+    text-align: center;
+}
+    #box6:hover {
+        background-color: darkseagreen;
+        border-radius: 10px;
+        box-shadow: 10px 10px red;  
+        height: 150px; 
+        margin: 20px ;
+        padding-top: 5%;
+        
+        
+    }
+

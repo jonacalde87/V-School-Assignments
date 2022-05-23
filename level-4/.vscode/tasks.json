@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build",
+			"path": "changing-theme-using-context/",
+			"group": "build",
+			"problemMatcher": [],
+			"label": "npm: build - changing-theme-using-context",
+			"detail": "react-scripts build"
+		}
+	]
+}

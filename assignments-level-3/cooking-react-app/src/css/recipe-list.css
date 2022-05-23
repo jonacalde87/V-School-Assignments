@@ -1,0 +1,17 @@
+/* body {
+    background-color: aqua;
+} */
+
+.recipe-list {
+    border-right: 1px solid black;
+    /* 100vw (view height) so border line takes all screen from bottom to top */
+    min-height: 100vh;
+    width: 50%;
+}
+
+.recipe-list__add-recipe-btn-container {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
