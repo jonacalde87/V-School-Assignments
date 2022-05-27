@@ -79,11 +79,11 @@ const peopleArray = [
 
 /* 3. Write a loop that pushes every other name to an array starting with the first person, 
 in this case "Harrison Ford", and every other occupation to *another* array starting with, in this case, "Singer".*/
-var names = []
-var occupations = []
-for (i = 0; i < peopleArray.length; i+=2) {
-   names.push(peopleArray[i].name)
-   occupations.push(peopleArray[i].occupation)
-}
-console.log(names)
-console.log(occupations)
+// var names = []
+// var occupations = []
+// for (i = 0; i < peopleArray.length; i+=2) {
+//    names.push(peopleArray[i].name)
+//    occupations.push(peopleArray[i].occupation)
+// }
+// console.log(names)
+// console.log(occupations)

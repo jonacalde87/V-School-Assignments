@@ -11,6 +11,12 @@ app.use(morgan('dev')) //Logs requests to the console
 app.use("/movies", require("./routes/movieRouter.js"))
 app.use("/tvshows", require("./routes/tvshowRouter.js"))
 
+// custom Error handling middleware: foes before the app.listen at bottom of code
+app.use((err, req, res, next) => {
+    console.log(err)
+    return res.send({errMsg: err.message})
+})
+
 // Server listen //
 //has 2 arguments: 1. PORT 2. callback function
 app.listen(9000, () => {   //so server listens for requests

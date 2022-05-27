@@ -14,13 +14,13 @@ p {
     margin: 5px;
 }
 
-.movie-container {
+.bounty-container {
     display: flex;
     flex-direction: column;
     margin: 0 32px;
 }
 
-.movie {
+.bounty {
     border: 1px solid darkblue;
     padding: 10px;
     margin: 5px;
@@ -28,8 +28,12 @@ p {
 
 form {
     border: 1px solid #333;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
     padding: 10px;
-    margin: 5px
 }
 
 input {
@@ -49,6 +53,10 @@ button {
 .delete-btn {
     background-color: firebrick;
     color: whitesmoke;
+}
+
+.header {
+    text-align: center;
 }
 
 .edit-btn {
