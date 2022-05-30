@@ -1,7 +1,11 @@
 import React, { useState } from 'react'
 
 export default function AddMovieForm(props) {
-    const initInputs = { title: props.title || "", genre: props.genre || "" } // put req modification
+    const initInputs = { 
+        title: props.title || "", 
+        genre: props.genre || "",
+        releaseYear: props.releaseYear || "" 
+    } // put req modification
     const [inputs, setInputs] = useState(initInputs)
 
     function handleChange(e) {
@@ -17,6 +21,14 @@ export default function AddMovieForm(props) {
         setInputs(initInputs)
     }
 
+    
+    function handleGenre(e) {
+        setInputs((prevState) => ({
+            ...prevState,
+            genre: e.target.value
+        }))
+    }
+   
     return (
         <form onSubmit={handleSubmit}>
             <input
@@ -26,12 +38,31 @@ export default function AddMovieForm(props) {
                 onChange={handleChange}
                 placeholder="Title"
             />
-            <input
+            {/* <input
                 type="text"
                 name='genre'
                 value={inputs.genre}
                 onChange={handleChange}
                 placeholder="Genre"
+            /> */}
+
+            
+            <select
+                onChange={handleGenre}
+                style={{height:"40px"}}
+            >
+                <option>- Select Genre -</option>
+                <option value="action">Action</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="horror">Horror</option>
+            </select>
+
+            <input
+                type="number"
+                name='releaseYear'
+                value={inputs.releaseYear}
+                onChange={handleChange}
+                placeholder="Release Year"
             />
             {/* put req modification */}
             <button>{props.btnText}</button>

@@ -14,6 +14,8 @@ export default function Bounty(props) {
     _id
   } = props
 
+
+
   //for put req
   const [editToggle, setEditToggle] = useState(false)
 
@@ -23,9 +25,11 @@ export default function Bounty(props) {
     <div className='bounty'>
       {!editToggle ?
         <>
-          <h1>Wanted: {firstName} {lastName} - *{type}*</h1>
-          <h2>Reward: ${bountyAmount} </h2>
-          <p>Wanted {living} </p>
+          <h1>Wanted: {firstName} {lastName}</h1>
+          <h2>Allegiance: { type === 'Sith' ? 'Sith' : 'Jedi'}</h2>
+          <h3 style={{color:'green'}}>Reward: ${bountyAmount} </h3>
+          <p>Status: {living ? 'Alive' : 'Dead'} </p>
+
           <button
             className='delete-btn'
             onClick={() => props.deleteBounty(_id)}>

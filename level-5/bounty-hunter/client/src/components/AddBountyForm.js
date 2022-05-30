@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
+import {Box, Checkbox} from '@mui/material'
 
 export default function AddBountyForm(props) {
     const initInputs = {
         firstName: props.firstName || "",  // put req modification
         lastName: props.lastName || "",
-        living: props.living || "",
+        living: props.living || false,
         bountyAmount: props.bountyAmount || "",
         type: props.type || ""
     }
@@ -15,12 +16,26 @@ export default function AddBountyForm(props) {
         setInputs(prevInputs => ({ ...prevInputs, [name]: value }))
     }
 
+    const handleStatus = (e) => {
+        setInputs((prevState) => ({
+            ...prevState,
+            living: e.target.checked
+        }))
+    }
+
     function handleSubmit(e) {
         e.preventDefault()
         // console.log(inputs)
         //post request
         props.submit(inputs, props._id)
         setInputs(initInputs)
+    }
+
+    function handleType(e) {
+        setInputs((prevState) => ({
+            ...prevState,
+            type: e.target.value
+        }))
     }
 
     return ( 
@@ -38,14 +53,16 @@ export default function AddBountyForm(props) {
                 value={inputs.lastName}
                 onChange={handleChange}
                 placeholder="Last Name"
+                /> 
+            <Box>
+                <h4>Status: Alive?</h4>
+                <Checkbox  
+                // style={{alignItem:"center"}}                          
+                checked={inputs.living}
+                onChange={handleStatus}
                 />
-            <input
-                type="text"
-                name="living"
-                value={inputs.living}
-                onChange={handleChange}
-                placeholder="Alive or Dead"
-                />
+            </Box>
+
             <input
                 type="number"
                 name="bountyAmount"
@@ -53,13 +70,24 @@ export default function AddBountyForm(props) {
                 onChange={handleChange}
                 placeholder="Bounty Amount"
                 />
-            <input
+            
+            {/* change this */}
+            {/* <input
                 type="text"
                 name="type"
                 value={inputs.type}
                 onChange={handleChange}
                 placeholder="Sith or Jedi"
-                />
+                /> */}
+
+            <select
+                onChange={handleType}
+            >
+                <option className='allegiance-btn'>- Select Allegiance -</option>
+                <option value="Sith">Sith</option>
+                <option value="Jedi">Jedi</option>
+            </select>
+
             <button>{props.btnText}</button>
         </form>            
     )

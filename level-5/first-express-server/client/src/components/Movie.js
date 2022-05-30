@@ -5,7 +5,7 @@ import AddMovieForm from './AddMovieForm' //put req modification
 export default function Movie(props) {
   // console.log(props) // Movie component should be receiving all the data via props, but check it
   //deconstruct props to not repeat it so much
-  const { title, genre, _id } = props
+  const { title, genre, _id, releaseYear } = props
 
   //put req modification
   const [editToggle, setEditToggle] = useState(false)
@@ -18,6 +18,7 @@ export default function Movie(props) {
         <>
           <h1>Title: {title}</h1>
           <p>Genre: {genre}</p>
+          <p>Release Year: {releaseYear}</p>
           <button
             className='delete-btn'
             onClick={() => props.deleteMovie(_id)}>
@@ -35,6 +36,7 @@ export default function Movie(props) {
           <AddMovieForm
             title={title}
             genre={genre}
+            releaseYear={releaseYear}
             _id={_id}
             btnText="Submit Edit"
             submit={props.editMovie}

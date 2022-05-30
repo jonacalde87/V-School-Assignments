@@ -3,6 +3,7 @@ import axios from 'axios'
 import Bounty from './Bounty'
 import AddBountyForm from './AddBountyForm.js'
 
+
 export default function App() {
     const [bounties, setBounties] = useState([])
 
@@ -45,6 +46,30 @@ export default function App() {
             .catch(err => (err))
     }
 
+    function handleFilter(e) {
+        if (e.target.value === "reset") {
+            getBounties()
+        } else {
+            axios.get(`/bounties/search/type?type=${e.target.value}`)
+                // .then(res => console.log(res))
+                .then(res => setBounties(res.data))
+                .catch(err => console.log(err))
+        }
+    }
+
+    //Couldnt make work another filter option (status)
+    // function handleStatus(e) {
+    //     if (e.target.value === "reset") {
+    //         getBounties()
+    //     } else {
+    //         axios.get(`/bounties/search/living?living=${e.target.value}`)
+    //             // .then(res => console.log(res))
+    //             .then(res => setBounties(res.data))
+    //             .catch(err => console.log(err))
+    //     }
+    // }
+
+
     useEffect(() => {
         getBounties()
     }, []) // will fire only once because side effect is empty
@@ -57,15 +82,40 @@ export default function App() {
                 <AddBountyForm
                     submit={addBounty}
                     btnText="Add Bounty" />
-                {bounties.map(bounty =>
-                    <Bounty
-                        {...bounty}
-                        key={bounty._id}
-                        deleteBounty={deleteBounty}
-                        editBounty={editBounty} />
-                )
-                }
+
+                <div className='filter-box'>
+                    <h4>Filter by Allegiance:</h4>
+                    <select
+                        onChange={handleFilter}
+                        style={{ width: "120px" }}
+                    >
+                        <option value="reset">All Allegiances</option>
+                        <option value="Jedi">Jedi</option>
+                        <option value="Sith">Sith</option>
+                    </select>
+
+                    {/* Need work */}
+                    {/* <h4>Filter by Status:</h4>
+                    <select
+                        onChange={handleStatus}
+                        style={{ width: "120px" }}
+                    >
+                        <option value="reset">All Status</option>
+                        <option value="alive">Alive</option>
+                        <option value="dead">Dead</option>
+                    </select> */}
+
+                </div>
+                    {bounties.map(bounty =>
+                        <Bounty
+                            {...bounty}
+                            key={bounty._id}
+                            deleteBounty={deleteBounty}
+                            editBounty={editBounty} />
+                    )
+                    }
+                </div>
             </div>
-        </div>
+        
     )
 }

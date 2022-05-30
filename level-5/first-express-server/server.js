@@ -2,10 +2,18 @@
 const express = require("express") //import express
 const app = express() //declare server variable
 const morgan = require("morgan")
+const mongoose = require('mongoose')
 
 //Middleware (for every request) (app.use makes it a middleware)
 app.use(express.json()) //Looks for a request body, and turns it into 'req.body'
 app.use(morgan('dev')) //Logs requests to the console
+
+//connect to DB
+mongoose.connect('mongodb://localhost:27017/moviesdb', // default port number for mongodb local/name of database
+    () => console.log('Connected to database')) // then nodemon server.js and should see message (it takes a min)
+
+    //DONT FORGET TO CREATE MODELS FOLDER IN BACKEND!
+
 
 // Routes //
 app.use("/movies", require("./routes/movieRouter.js"))

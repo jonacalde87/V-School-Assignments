@@ -63,3 +63,15 @@ button {
     background-color: cornflowerblue;
     color: whitesmoke;
 }
+
+/* .allegiance-btn {
+    display:block;
+    margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+} */
+
+.filter-box {
+    display: flex;
+    gap: 5px;
+}
