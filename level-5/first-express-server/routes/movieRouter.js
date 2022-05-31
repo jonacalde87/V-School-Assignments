@@ -41,19 +41,17 @@ movieRouter.post("/", (req, res, next) => {
 })
 
 // //Get One
-// movieRouter.get("/:movieId", (req, res, next) => { //add next for err handling
-//     //console.log(req) // test in postman
-//     const movieId = req.params.movieId
-//     const foundMovie = movies.find(movie => movie._id === movieId)
-//     //Error ; add next function ------
-//     if(!foundMovie) {
-//         const error = new Error(`The item with the id ${movieId} was not found`)
-//         res.status(500)
-//         return next(error)
-//     }
-//     // -----
-//     res.status(200).send(foundMovie)
-// })
+movieRouter.get("/:movieId", (req, res, next) => { //add next for err handling
+    //console.log(req) // test in postman
+    const movieId = req.params.movieId
+    Movie.findById(movieId, (err, movie) => {
+        if(!movieId) {
+            res.status(500)
+            return next(err)
+        }
+        res.status(200).send(movie)
+    })
+})
 
 //Get by genre (using query strings) to filter : localhost:9000/movies/search/genre?genre=fantasy
 movieRouter.get("/search/genre", (req, res, next) => {
