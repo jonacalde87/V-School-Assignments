@@ -35,6 +35,7 @@ export default function Bounty(props) {
             onClick={() => props.deleteBounty(_id)}>
             Delete
           </button>
+          
           <button
             className='edit-btn'
             onClick={() => setEditToggle(prevToggle => !prevToggle)}>

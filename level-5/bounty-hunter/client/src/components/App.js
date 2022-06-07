@@ -74,7 +74,7 @@ export default function App() {
         getBounties()
     }, []) // will fire only once because side effect is empty
 
-    //for each bounty return the bounty component that has all the information from the nounty
+    //for each bounty return the bounty component that has all the information from the bounty
     return (
         <div>
             <h1 className='header'>Bounty Hunter Tracker</h1>
